@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Third-assingment</title>
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- lato font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <!-- custom design -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'lato-font': 'Lato', sans-serif,
+                        'background-color': '#F85559'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
 
+<body class="lato-font">
+    <header class="container mx-auto">
+        <nav class="bg-red-500 text-white rounded-l-full rounded-r-full my-12 py-6">
+            <div class="flex items-center justify-between">
+                <div class="font-medium text-xl pl-12">
+                    <a class="mx-3" href="">Home</a>
+                    <a class="mx-3" href="">About Us</a>
+                    <a class="mx-3" href="">Shop</a>
+                    <a class="mx-3" href="">All Fruits</a>
+                </div>
+                <div class="flex items-center gap-x-4">
+                    <img src="images/logo.png" alt="">
+                    <h2 class="text-4xl font-bold">Fruit Burst</h2>
+                </div>
+                <div class="flex items-center py-3 px-12">
+                    <div class="">
+                        <input type="text" class="py-2 px-4 w-80 rounded-full" placeholder="Search here"/>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <ul tabindex="0"
+                            class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="container mx-auto">
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
